@@ -11,8 +11,7 @@ class Register extends Component {
             nombre: "",
             apellido: "",
             procesado: false,
-            show:false,
-            setShow:false,
+            show:false
         }
     }
 

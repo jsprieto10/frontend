@@ -37,3 +37,7 @@ h6{
   color: green !important;
   cursor: default;
 }
+
+.modal-dialog{
+  color:black;
+}
