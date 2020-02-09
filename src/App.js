@@ -1,26 +1,26 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { Container, Image, Tabs, Tab } from 'react-bootstrap';
+import Register from './Components/Register';
+import ListUser from './Components/ListUser';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+    <Container>
+      <Image src="https://valid.com/wp-content/uploads/2017/12/logo_horizontal_210.svg" alt="logo"/>
+      <Container id="tabs">
+        <Tabs defaultActiveKey="register" id="uncontrolled-tab-example">
+          <Tab eventKey="register" title="Registro">
+            <Register/>
+          </Tab>
+          <Tab eventKey="list" title="Listado">
+            <ListUser/>
+          </Tab>
+        </Tabs>
+      </Container>
+      </Container>
+  )
 }
 
 export default App;
